@@ -3,132 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PawfectBites - Hight Quality Pet Food</title>
+    <title>PawfectBites - High Quality Pet Food</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <h1 class="logo">PawfectBites🐾</h1>
-        <nav class="navbar">
+
+<header class="header">
+    <h1 class="logo">PawfectBites🐾</h1>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-icons">
+        <span>🔍</span>
+        <span>🛒</span>
+        <span>👤</span>
+    </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+    <h2 class="hero-title">Best Pet Collection</h2>
+    <p class="hero-text">Find the best products for your pets</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section id="collection" class="category">
+    <h2 class="section-title">Shop by Pet</h2>
+    <p class="section-title">Find What Your Pet Loves</p>
+
+    <div class="category-container">
+        <div class="category-card">
+            <h3>Dog</h3>
+            <img src="images/dog.jpg" alt="Dog">
+            <p>Food, Toys, Accessories</p>
+        </div>
+
+        <div class="category-card">
+            <h3>Cat</h3>
+            <img src="images/cat.jpg" alt="Cat">
+            <p>Food, Toys, Accessories</p>
+        </div>
+
+        <div class="category-card">
+            <h3>Bird</h3>
+            <img src="images/bird.jpg" alt="Bird">
+            <p>Food, Cage, Care</p>
+        </div>
+    </div>
+</section>
+
+<section id="shop" class="products">
+    <h2 class="section-title">Popular Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="images/dog_food.webp" alt="Premium Dog Food">
+            <h3>Premium Dog Food</h3>
+            <p>₹500</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product-2.jpg" alt="Shrimp Pellets">
+            <h3>Shrimp Pellets</h3>
+            <p>₹450</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product-3.jpg" alt="Shrimp Pellets Formula">
+            <h3>Shrimp Pellets Formula</h3>
+            <p>₹650</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product-4.jpg" alt="FruitBlend">
+            <h3>FruitBlend</h3>
+            <p>₹500</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/product-5.jpg" alt="Cat Toy">
+            <h3>Cat Toy</h3>
+            <p>₹500</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/cat_toy.webp" alt="Cat Toy">
+            <h3>Cat Toy</h3>
+            <p>₹200</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bird_cage.webp" alt="Bird Cage">
+            <h3>Bird Cage</h3>
+            <p>₹1500</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="offer" class="offer">
+    <h2>Special Offer</h2>
+    <p>Get 20% off on all pet products!</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea><br><br>
+
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-brand">
+        <h2>PawfectBites🐾</h2>
+        <p>
+            Premium nutrition for every pet. Crafted with love, backed by science, trusted by thousands of families across India.
+        </p>
+    </div>
+
+    <div class="footer-links-container">
+
+        <div class="footer-column">
+            <h3>Shop</h3>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Dog Products</a></li>
+                <li><a href="#">Cat Products</a></li>
+                <li><a href="#">Bird Products</a></li>
             </ul>
-        </nav>
-        <div class="header-icons">
-            <span>Search</span>
-            <span>Cart</span>
-            <span>Login</span>
         </div>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h2 class="hero-title">Best Pet Collection</h2>
-            <p class="hero-text">Find the best products for your pets</p>
-            <button class="btn">Shop Now</button>
-        </section>
-        <section id="collection" class="category">
-           <h2 class="section-title">Shop by Category</h2>
-            <div class="category-container">
-                <div class="category-card">
-                <h3>Dog</h3>
-                <p>Food, Toys, Accessories</p>
-            </div>
-            <div class="category-card">
-                <h3>Cat</h3>
-                <p>Food, Toys, Accessories</p>
-            </div>
-            <div class="category-card">
-                <h3>Bird</h3>
-                <p>Food, Cage, Care</p>
-            </div>
-            </div>
-        </section>
-        <section id="shop" class="products">
-            <h2 class="section-title">Popular Products</h2>
-
-            <div class="product-container">
-                <div class="product-card">
-                <img src="images/dog_food.webp" alt="Dog Food" width="300" height="300">
-                <h3>Premium Dog Food</h3>
-                <p>₹500</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-container">
-                <div class="product-card">
-                <img src="images/product-2.jpg" alt="Dog Food" width="300" height="300">
-                <h3>Shrimp Pellets</h3>
-                <p>₹450</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-container">
-                <div class="product-card">
-                <img src="images/product-3.jpg" alt="Dog Food" width="300" height="300">
-                <h3>Shrimp Pellets Formula</h3>
-                <p>₹650</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-container">
-                <div class="product-card">
-                <img src="images/product-4.jpg" alt="Dog Food" width="300" height="300">
-                <h3>FruitBlend</h3>
-                <p>₹500</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-container">
-                <div class="product-card">
-                <img src="images/product-5.jpg" alt="Dog Food" width="300" height="300">
-                <h3>Cat Toy</h3>
-                <p>₹500</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="images/cat_toy.webp" alt="Cat Toy" width="300" height="300">
-                <h3>Cat Toy</h3>
-                <p>₹200</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="images/bird_cage.webp" alt="Bird Cage" width="300" height="300">
-                <h3>Bird Cage</h3>
-                <p>₹1500</p>
-                <button>Add to Cart</button>
-            </div>
-            </div>
-        </section>
-        <section id="contact" class="offer">
-            <h2>Special Offer</h2>
-            <p>Get 20% off on all pet products!</p>
-            <button class="btn">Shop Now</button>
-        </section>
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" placeholder="Your Name" name="name">
-                <br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="Your Email" name="email">
-                <br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" placeholder="Your Message" name="message"></textarea>
-                <br><br>
-                <button type="submit" class="btn">Send</button>
-            </form>
-
-        </section>
-    </main>
-    <footer class="footer">
-        <h2 class="footer-logo">PawfectBites🐾</h2>
-        <p>Your trusted pet shop</p>
-        <div class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact</a>
+        <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Nutrition Blog</a></li>
+            </ul>
         </div>
-    </footer>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Vets</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
